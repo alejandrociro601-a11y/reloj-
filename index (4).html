@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Tiempo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="tarjeta">
+    <h1>Calculadora de Tiempo</h1>
+
+    <section class="bloque">
+      <h2>Tiempo inicial</h2>
+      <div class="fila">
+        <div class="campo">
+          <label for="hora1">Horas</label>
+          <input type="number" id="hora1" min="0" max="23" value="0">
+        </div>
+        <span class="separador">:</span>
+        <div class="campo">
+          <label for="min1">Minutos</label>
+          <input type="number" id="min1" min="0" max="59" value="0">
+        </div>
+        <span class="separador">:</span>
+        <div class="campo">
+          <label for="seg1">Segundos</label>
+          <input type="number" id="seg1" min="0" max="59" value="0">
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>Tiempo final</h2>
+      <div class="fila">
+        <div class="campo">
+          <label for="hora2">Horas</label>
+          <input type="number" id="hora2" min="0" max="23" value="0">
+        </div>
+        <span class="separador">:</span>
+        <div class="campo">
+          <label for="min2">Minutos</label>
+          <input type="number" id="min2" min="0" max="59" value="0">
+        </div>
+        <span class="separador">:</span>
+        <div class="campo">
+          <label for="seg2">Segundos</label>
+          <input type="number" id="seg2" min="0" max="59" value="0">
+        </div>
+      </div>
+    </section>
+
+    <button id="btnSumar">SUMAR</button>
+
+    <p class="resultado-principal">RESULTADO: <span id="valorResultado">00:00:00</span></p>
+    <p class="resultado-secundario">la diferencia de tiempo es <span id="valorDiferencia">00:00:00</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
